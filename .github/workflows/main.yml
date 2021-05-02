@@ -17,6 +17,10 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.5
+        with:
+         version: 14
       - name: Cache SonarCloud packages
         uses: actions/cache@v1
         with:
